@@ -1,8 +1,12 @@
 <html>
-<head>
-    <title>Хрю</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style type="">
+    <head>
+        <title>Хрю</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#FFC0CB" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="pink">
+        <style type="">
         .btn {
             text-decoration: none;
             border: none;
@@ -18,19 +22,20 @@
         }
 
     </style>
-    <script>
+        <script>
         function play() {
             var audio = document.getElementById("audio");
             audio.play();
         }
 
     </script>
-</head>
+    </head>
 
-<body>
-    <center>
-        <input class=btn type="image" src="pig.png" onclick="play()">
-    </center>
-    <audio id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
-</body>
+    <body>
+        <center>
+            <input class=btn type="image" src="pig.png" onclick="play()">
+        </center>
+        <audio id="audio"
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+    </body>
 </html>
