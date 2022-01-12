@@ -6,10 +6,11 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="pink">
-        <style type="">
+        <style type="text/css">
         * {
             margin: 0;
             padding: 0;
+            /* box-sizing: border-box; */
         }
         .imgbox {
             display: grid;
@@ -33,25 +34,41 @@
             transform: scale(0.98);
         }
 
+        /* .container {
+  position: relative;
+  height: 400px;
+} */
+
+/* .centered-element {
+  margin: 0;
+  position: absolute;
+
+} */
     </style>
-        <script>
-            document.addEventListener("touchstart", function() {},false);
+
+    <script>
+        document.addEventListener("touchstart", function() {},false);
         function play() {
             var audio = document.getElementById("audio");
             audio.play();
         }
-
     </script>
     </head>
 
     <body>
 
-        <center>
-            <!-- <div class="imgbox"> -->
-            <input class="center-fit" type="image" src="pig.png"
-                onclick="play()">
+
+
+        <!-- <div class="container"> -->
+            <!-- <div class="centered-element"> -->
+                <center><br><br><br><br><br><br><br>
+                    <!-- <div class="imgbox"> -->
+                    <input class="center-fit" type="image" src="pig.png"
+                        onclick="play()">
+                    <!-- </div> -->
+                </center>
             <!-- </div> -->
-        </center>
+        <!-- </div> -->
 
         <audio id="audio"
             src="Sound_22365.mp3"></audio>
