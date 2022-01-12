@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Хрю</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="theme-color" content="#FFC0CB" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="mobile-web-app-capable" content="yes">
@@ -35,6 +35,7 @@
 
     </style>
         <script>
+            document.addEventListener("touchstart", function() {},false);
         function play() {
             var audio = document.getElementById("audio");
             audio.play();
@@ -47,8 +48,8 @@
 
         <center>
             <!-- <div class="imgbox"> -->
-                <input class="center-fit" type="image" src="pig.png"
-                    onclick="play()">
+            <input class="center-fit" type="image" src="pig.png"
+                onclick="play()">
             <!-- </div> -->
         </center>
 
