@@ -7,7 +7,19 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="pink">
         <style type="">
-        .btn {
+                    * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+
             text-decoration: none;
             border: none;
             padding: 12px 40px;
@@ -15,9 +27,9 @@
             cursor: pointer;
             outline: none;
             transition: 0.2s all;
-            }
+        }
 
-            .btn:active {
+        .btn:active {
             transform: scale(0.98);
         }
 
@@ -32,9 +44,12 @@
     </head>
 
     <body>
-        <center>
-            <input class=btn type="image" src="pig.png" onclick="play()">
-        </center>
+
+        <div class="imgbox">
+            <input class="center-fit" type="image" src="pig.png"
+                onclick="play()">
+        </div>
+
         <audio id="audio"
             src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
     </body>
